@@ -1,0 +1,61 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #8ab2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div {
+    background-color: #c5c5c5;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+#secao-cadastro{
+    width: 300px;
+    max-width: 100%;
+    height: 50px;
+    /*background-color: cyan;*/
+}
+
+#formulario{
+    height: 300px;
+    /*background-color: white;*/
+}
+
+
+.informacao-do-aplicativo{
+    font-weight: 400;
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    background-color: #c5c5c5;
+}
+
+#secao-instalacao{
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#secao-instalacao img{
+    width: 133px;
+    height: 39px;
+}
+
+
+.estilo-formulario{
+    width: 100%;
+    max-width: 340px;
+    border: var(--borda);
+    background-color: var(--cor-ciano);
+
+}
