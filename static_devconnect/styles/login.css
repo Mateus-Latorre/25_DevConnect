@@ -1,34 +1,35 @@
 main{
     width: 100%;
     min-height: 100vh;
-    background-color: #8ab2ff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main > div {
-    background-color: #c5c5c5;
-    width: 50%;
-    height: 500px;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    
+    gap: 15px;
 
 }
 
 #secao-cadastro{
-    width: 300px;
-    max-width: 100%;
-    height: 50px;
-    /*background-color: cyan;*/
+    max-width: 340px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #formulario{
-    height: 300px;
-    /*background-color: white;*/
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    justify-content: space-between;
 }
 
 
@@ -36,7 +37,6 @@ main > div {
     font-weight: 400;
     color: var(--cor-preto);
     font-size: var(--tamanho-fonte-sm);
-    background-color: #c5c5c5;
 }
 
 #secao-instalacao{
@@ -57,5 +57,32 @@ main > div {
     max-width: 340px;
     border: var(--borda);
     background-color: var(--cor-ciano);
-
 }
+
+#formulario > div{
+    width: 100%;
+}
+
+#formulario > div > label{
+     font-size: var(--tamanho-fonte-sm);
+     color: var(--cor-cinza-escuro2);
+     font-weight: 500;
+     padding-bottom: 10px;
+}
+
+#formulario > p{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    text-transform: uppercase;
+}
+.formulario-botao-azul{
+    width: 100%;
+}
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+#secao-cadastro > p{
+    font-size: var(--tamanho-fonte-md);
+}
+
