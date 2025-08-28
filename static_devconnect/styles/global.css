@@ -49,12 +49,12 @@ input{
 
 .formulario-botao-azul{
     background-color: var(--cor-azul);
-    border-radius: var(--borda-arredondada);
     border: none;
     height: 35px;
     color: var(--cor-preto);
     font-size: var(--tamanho-fonte-sm);
     font-weight: 600;
+    transition: background-color 0.5s;
 }
 .cadastro-botao-azul{
     background-color: var(--cor-azul);
@@ -64,4 +64,80 @@ input{
     font-size: var(--tamanho-fonte-sm);
     font-weight: 600;
     transition: background-color 0.3s;
+}
+#cabecalho{
+    background-color: var(--cor-branco);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--cor-ciano);
+}
+#cabecalho > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+#logo-mobile{
+    display: none;
+}
+.cabecalho-acoes{
+ display: flex;
+ align-items: center;
+ gap: 15px;
+}
+.cabecalho-acoes > a {
+    display: flex;
+    align-items: center;
+}
+#foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+#foto-stories{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.estilo-formulario{
+    width: 100%;
+    border: 2px solid var(--cor-ciano);
+    background-color:transparent;
+}
+input[type="file"] {
+    display: none;
+  }
+  
+  /* Estiliza o "botão fake" */
+  .botao-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--cor-cinza-escuro1);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s;
+    border: var(--borda);
+  }
+  
+  .botao-upload:hover {
+    background: var(--cor-cinza-escuro2);
+  }
+
+
+/* RESPONSIVO */
+@media only screen and (max-width: 485px){
+    #logo-mobile{
+        display: initial;
+    }
+    #logo-pc{
+        display: none;
+    }
 }

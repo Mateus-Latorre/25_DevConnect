@@ -53,12 +53,8 @@ main > div {
 
 
 .estilo-formulario{
-    width: 100%;
     max-width: 340px;
-    border: var(--borda);
-    background-color: var(--cor-ciano);
 }
-
 #formulario > div{
     width: 100%;
 }

@@ -70,21 +70,3 @@ main > div {
     font-size: var(--tamanho-fonte-md);
 }
 /* Esconde o input original */
-input[type="file"] {
-    display: none;
-  }
-  
-  /* Estiliza o "botão fake" */
-  .botao-upload {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--cor-cinza-escuro1);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.5s;
-  }
-  
-  .botao-upload:hover {
-    background: var(--cor-cinza-escuro2);
-  }
